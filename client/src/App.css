@@ -1,0 +1,11 @@
+.App {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}

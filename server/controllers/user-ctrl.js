@@ -24,7 +24,7 @@ createUser = (req, res) => {
     .then(() => {
       return res.status(201).json({
         success: true,
-        id: movie._id,
+        id: user._id,
         message: 'Character Added',
       })
     })
