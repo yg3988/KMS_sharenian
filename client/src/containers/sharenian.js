@@ -7,19 +7,19 @@ import api from "../services/index";
 //import component
 import Home from "../components/home"
 
-class HomeContainer extends Component {
+class Sharenian extends Component {
   constructor(props) {
     super(props);
     this.state = {}
   }
 
+  componentDidMount() {
+
+  }
+
   render() {
-    return (
-      <Home
-        service={api.searchGuild}
-      />
-    );
+    return ();
   }
 }
 
-export default HomeContainer;
+export default Sharenian;
