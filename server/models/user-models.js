@@ -3,10 +3,10 @@ const Schema = mongoose.Schema;
 
 const Users = new Schema(
   {
-    charGuild: { type: String, required: true, uniqu: true },
-    charImgUrl: { type: String, required: true },
-    charNick: { type: String, required: true },
-    charJob: { type: String, required: true },
+    Guild: { type: String, required: true },
+    ImgUrl: { type: String, required: true },
+    Nick: { type: String, required: true },
+    Job: { type: String, required: true },
   }
 )
 

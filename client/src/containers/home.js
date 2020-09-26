@@ -2,7 +2,7 @@
 import React from "react";
 
 //import axios servies
-
+import api from "../services/index";
 
 //import component
 import Home from "../components/home"
@@ -10,7 +10,9 @@ import Home from "../components/home"
 const HomeContainer = () => {
 
   return (
-    <Home />
+    <Home
+      service={api}
+    />
   )
 }
 

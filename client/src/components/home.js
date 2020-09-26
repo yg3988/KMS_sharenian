@@ -11,9 +11,17 @@ const useInput = (initialValue) => {
 }
 
 const Home = (
-  service
+  { service }
 ) => {
+  console.log(service)
   const nick = useInput("")
+  const handleKeyPress = e => {
+    if (e.key == 'Enter') {
+      const payload = { name: nick.value }
+      console.log(payload);
+      service.insertUser(payload);
+    }
+  }
 
   return (
     <div className='home'>
@@ -23,6 +31,7 @@ const Home = (
           type='text'
           placeholder="Typing Your Character's name"
           onChange={nick.onChange}
+          onKeyPress={handleKeyPress}
         />
       </div>
     </div>
