@@ -1,25 +1,24 @@
 //import node_modules
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
+import queryString from "query-string";
+import { useLocation } from "react-router-dom";
 
 //import axios servies
 import api from "../services/index";
 
 //import component
-import Home from "../components/home"
+import Sharenian from "../components/sharenian"
 
-class Sharenian extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-  }
+const SharenianContainer = () => {
+  const gid = useLocation().pathname.split('/')[2];
 
-  componentDidMount() {
-
-  }
-
-  render() {
-    return ();
-  }
+  return (
+    <div>
+      <Sharenian
+        gid={gid}
+      />
+    </div>
+  );
 }
 
-export default Sharenian;
+export default SharenianContainer;

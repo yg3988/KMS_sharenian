@@ -8,7 +8,12 @@ import {
 
 import './App.css';
 
-import HomeContainer from "./containers/home";
+import {
+  Home,
+  Sharenian,
+  Failed
+} from "./containers/index"
+
 import Footer from "./components/footer/footer"
 
 function App() {
@@ -24,10 +29,10 @@ function App() {
             <div className="navbar_items">
               <ul>
                 <li>
-                  <Link to="/sharenian/:id">샤레니안 관리</Link>
+                  <Link to="/guild/:id/sharenian/">샤레니안 관리</Link>
                 </li>
                 <li>
-                  <Link to="/guilduser/:id">길드 정보</Link>
+                  <Link to="/guild/:id/guilduser/">길드 정보</Link>
                 </li>
               </ul>
             </div>
@@ -35,9 +40,15 @@ function App() {
         </header>
 
         <Switch>
-          <Route path="/">
-            <HomeContainer />
+          <Route exact path="/" exact>
+            <Home />
           </Route>
+          <Router exact path="/guild/:id" >
+            <Sharenian />
+          </Router>
+          <Router path="/404/:world?" >
+            <Failed />
+          </Router>
         </Switch>
         <Footer />
       </div>

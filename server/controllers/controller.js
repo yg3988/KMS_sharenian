@@ -4,15 +4,15 @@ const User = require('../models/user-models');
 const Guild = require('../models/guild-models');
 
 getGuildByName = (req, res) => {
-  Guild.findOneAndUpdate({ world: req.body.world, guild: req.body.guild }, { world: req.body.world, guild: req.body.guild }, (err, guild) => {
-
+  Guild.findOneAndUpdate({ world: req.body.world, guild: req.body.guild }, { world: req.body.world, guild: req.body.guild }, { upsert: true }, (err, guild) => {
+    //Guild.findOne({ world: req.body.world, guild: req.body.guild }, (err, guild) => {
     if (err) {
       return res.status(400).json({ success: false, error: `띠로링` })
     }
 
     if (!guild) {
       return res.status(404).json({
-        success: false, error: `Guild not found. `
+        success: false, error: `Guild not found.`
       })
     }
 

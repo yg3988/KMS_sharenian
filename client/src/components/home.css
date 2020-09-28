@@ -38,13 +38,14 @@
   text-align: center;
 }
 
-.search_bar_container .drop_down ul {
+.search_bar_container .drop_down ul.select_box {
   background-color: #fff;
   width: 110px;
   height: 160px;
   padding-left: 30px;
   border-radius: 10px;
-  overflow-y: auto;
+  display: none;
+  overflow-y: scroll;
 }
 
 .search_bar_container .drop_down li {
@@ -52,22 +53,18 @@
   list-style: none;
 }
 
+
 .search_bar_container .drop_down li img {
   position: relative;
   top: 2px;
-  left: -24px;
+  left: -4px;
 }
 
-.search_bar_container .drop_down li label {
+.search_bar_container .drop_down li span {
   position: relative;
-  left: -16px;
+  width: 100%;
+  left: 4px;
   cursor: pointer;
-}
-
-.radio_btn {
-  position: relative;
-  left: -8px;
-  visibility: hidden;
 }
 
 .input_bar {
