@@ -4,8 +4,10 @@ const Controller = require('../controllers/controller');
 
 const router = express.Router();
 
-router.post(`/guild`, Controller.createGuild);
-router.post(`/guilds`, Controller.getGuildByName);
-router.post(`/user`, Controller.createUser);
+router.post(`/getguildbyname`, Controller.getGuildByName);
+router.post(`/getguildbyid`, Controller.getGuildById);
+router.post(`/searchguild`, Controller.getGuildInMaple);
+router.post(`/getguildinfo`, Controller.getGuildInfo);
+router.post(`/getguildmembers`, Controller.getGuildMembers);
 
 module.exports = router;

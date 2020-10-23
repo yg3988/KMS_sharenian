@@ -1,4 +1,156 @@
-.guild_wrapper{
+.guild_wrap{
+  display: flex;
   margin-top: 60px;
+  width: 100vw;
   height: calc(100vh - 84px);
+}
+.guild_side_wrap{
+  width: 3rem;
+  height: 100%;
+  padding: 0 0.5rem;
+  border-right: 1px solid rgb(185, 185, 185);
+}
+
+.nav_bar_list {
+  position: relative;
+  top: 100%;
+  transform: translateY(-100%);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_bar_list li{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid #f68600;
+  border-radius: 25%;
+}
+
+.img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
+}
+
+.contents_wrap{
+  width: calc(100vw - 18.5rem);
+}
+
+.contents_wrap h1{
+  margin: 0.5rem 0 0.25rem 0.5rem;
+}
+
+.contents_wrap .horizon_divider{
+  margin-left: 3rem;
+  width: 4rem;
+  height: 0;
+  border-bottom: 4px solid #646464;
+}
+
+.sharenian_tables{
+  margin: 1rem 4rem;
+  
+}
+
+.sharenian_lane_wrapper{
+  margin-bottom: 1.4rem;
+  padding: 0.8rem 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 1px grey;
+}
+
+
+.table_header{
+  margin-left: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.sharenian_table_wrapper{
+  display: none;
+  justify-content: center;
+}
+
+.sharenian_table_wrapper > table +  table{
+  margin-left: 3rem;
+}
+
+.guild_users_container{
+  width: 17rem;
+  height: calc(100vh - 84px);
+}
+
+.users_title{
+  display: flex;
+  padding: 0 0.4rem;
+  height: 50px;
+  background-color: #f68600;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.users_title h3{
+  margin: 0;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.users_title .member-sync{
+  width: 1.5rem;
+}
+
+.users_title .member-sync:hover{
+  cursor: pointer;
+  animation: rotate 2s linear infinite;
+}
+
+ul.members {
+  margin-top: 0px;
+  padding: 0.3rem;
+  border-left: 1px solid rgb(185, 185, 185);
+  height: calc(100vh - 144px);
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+ul.members::-webkit-scrollbar {
+  display: none;
+}
+
+.guild_user{
+  display: flex;
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgb(185, 185, 185);
+  justify-content: space-between;
+}
+
+.guild_user:hover{
+  background-color: rgb(197, 197, 197);
+}
+
+.guild_user  p {
+  margin: 0;
+}
+
+.guild_user > div.left > p:last-child {
+  font-size: 0.7rem;
+}
+
+.guild_user >div.right{
+  display: flex;
+}
+
+@keyframes rotate {
+   to{
+     transform: rotate(360deg)
+   }
 }

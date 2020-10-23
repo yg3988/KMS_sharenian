@@ -5,6 +5,8 @@ import './failed-search-guild.css'
 const failedSearchGuild = (
   props
 ) => {
+  const notice = props.notice.split('\n');
+
   return (
     <div className="error">
       <div className="loading">
@@ -14,7 +16,7 @@ const failedSearchGuild = (
         <div className="loading_circle" />
       </div>
       <div className="loading_comment">
-        Not Found Guild<br />Wait few Seconds...
+        {notice[0]}<br/>{notice[1]}
       </div>
     </div >
   );

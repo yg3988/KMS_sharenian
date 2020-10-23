@@ -4,15 +4,19 @@ const api = axios.create({
   baseURL: 'http://localhost:3000/api'
 })
 
-export const addGuild = payload => api.post(`/guild`, payload);
-export const searchGuild = payload => api.post(`/guilds`, payload);
-export const insertUser = payload => api.post(`/user`, payload);
+export const getGuildInDB = payload => api.post(`/getguildbyname`, payload);
+export const getGuilds = payload => api.post(`/searchguild`, payload);
+export const getGuildById = payload => api.post(`/getguildbyid`, payload)
+export const getGuildInfo = payload => api.post(`/getguildinfo`, payload);
+export const getGuildMembers = payload => api.post(`/getguildmembers`, payload);
 
 
 const apis = {
-  addGuild,
-  searchGuild,
-  insertUser
+  getGuildInDB,
+  getGuilds,
+  getGuildById,
+  getGuildInfo,
+  getGuildMembers,
 }
 
 export default apis

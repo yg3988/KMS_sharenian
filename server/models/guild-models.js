@@ -6,9 +6,9 @@ UserSchema = mongoose.model('User').schema;
 
 const GuildsSchema = new Schema(
   {
-    world: { type: String, required: true },
-    guild: { type: String, required: true },
-    users: [UserSchema]
+    world : { type: String, required: true },
+    guild : { type: String, required: true },
+    users : { type: [UserSchema] }
   },
   { versionKey: false }
 )
