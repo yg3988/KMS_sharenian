@@ -1,0 +1,54 @@
+ul.members {
+	margin-top: 0px;
+	padding: 0.3rem;
+	border-left: 1px solid rgb(185, 185, 185);
+	height: calc(100vh - 144px);
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+
+ul.members::-webkit-scrollbar {
+	display: none;
+}
+
+.guild_user {
+	margin-bottom: 0.2rem;
+	padding: 0 1rem 0.3rem 1rem;
+
+	border-bottom: 1px solid rgb(185, 185, 185);
+	justify-content: space-between;
+}
+
+input {
+	position: absolute;
+	display: none;
+	visibility: hidden;
+}
+
+.guild_user div.members_contents {
+	display: flex;
+	width: 100%;
+}
+
+.guild_user:hover {
+	background-color: #c5c5c5;
+}
+
+.guild_user p {
+	margin: 0;
+}
+
+div.left {
+	width: 80%;
+}
+.guild_user div.left > p:last-child {
+	font-size: 0.7rem;
+}
+
+.guild_user div.right {
+	display: flex;
+}
+
+.guild_user div.right > p:first-child::after {
+	content: '/';
+}

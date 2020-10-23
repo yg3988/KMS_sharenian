@@ -1,0 +1,39 @@
+.sharenian_tables {
+	margin: 1rem 4rem;
+	display: flex;
+}
+
+.sharenian_lane_wrapper {
+	margin-bottom: 1.4rem;
+	padding: 0.8rem 0;
+	border-radius: 5px;
+	box-shadow: 0px 0px 7px 1px grey;
+	width: 685px;
+}
+
+.sharenian_lane_wrapper + .sharenian_lane_wrapper {
+	margin-left: 40px;
+}
+
+.table_header {
+	margin-left: 0.8rem;
+	font-size: 1.2rem;
+	font-weight: 900;
+}
+
+.sharenian_table_wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.sharenian_table_wrapper > table + table {
+	margin-left: 1rem;
+}
+
+tr {
+	text-align: center;
+}
+
+tr td {
+	font-size: 0.8rem;
+}

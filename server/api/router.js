@@ -9,5 +9,6 @@ router.post(`/getguildbyid`, Controller.getGuildById);
 router.post(`/searchguild`, Controller.getGuildInMaple);
 router.post(`/getguildinfo`, Controller.getGuildInfo);
 router.post(`/getguildmembers`, Controller.getGuildMembers);
+router.post(`/getmembersofsharenian`, Controller.getMembersOfSharenian);
 
 module.exports = router;

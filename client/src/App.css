@@ -1,54 +1,53 @@
 .App {
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: 0;
-  -ms-user-select: none; 
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	-ms-user-select: none;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
-.header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background: #151515;
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background: #151515;
 }
 
-.navbar{
-  display: flex;
-  height: 100%;
-  align-items: center;
-  padding: 0 2rem;
+.navbar {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	padding: 0 4.5rem;
 }
 
-.navbar ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+.navbar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
 
 .navbar li {
-  padding-left: 2rem;
+	padding-left: 2rem;
 }
 
-
-.navbar_title a{
-  color: #f68600;
-  text-decoration: none;
-  font-size: 2rem;
+.navbar_title a {
+	color: #f68600;
+	text-decoration: none;
+	font-size: 2rem;
 }
-.navbar_items a{
-  color: #ffffff;
-  text-decoration: none;
-  position: left;
+.navbar_items a {
+	color: #ffffff;
+	text-decoration: none;
+	position: left;
 }
 
-.navbar_items a:hover{
-  border-bottom: 2px solid #f68600;
+.navbar_items a:hover {
+	border-bottom: 2px solid #f68600;
 }
